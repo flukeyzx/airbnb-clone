@@ -2,6 +2,7 @@ import express from "express";
 import userRouter from "./routes/user.routes.js";
 import uploadRouter from "./routes/upload.routes.js";
 import placeRouter from "./routes/place.routes.js";
+import bookingRouter from "./routes/booking.routes.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import path from "path";
@@ -32,3 +33,6 @@ app.use(uploadRouter);
 
 //places routes
 app.use(placeRouter);
+
+//booking routes
+app.use(bookingRouter);

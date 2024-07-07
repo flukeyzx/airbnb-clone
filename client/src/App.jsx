@@ -8,6 +8,7 @@ import axios from "axios";
 import AuthProvider from "./AuthProvider.jsx";
 import Account from "./pages/Account.jsx";
 import Place from "./pages/Place.jsx";
+import Bookings from "./pages/Bookings.jsx";
 
 axios.defaults.baseURL = "http://localhost:3000";
 axios.defaults.withCredentials = true;
@@ -23,6 +24,7 @@ function App() {
           <Route path="/account/:subpage?" element={<Account />} />
           <Route path="/account/:subpage?/:action?" element={<Account />} />
           <Route path="/place/:id" element={<Place />} />
+          <Route path="/account/bookings" element={<Bookings />} />
         </Route>
       </Routes>
     </AuthProvider>

@@ -43,7 +43,7 @@ const NewPlace = () => {
             <Link
               to={"/account/places/" + place._id}
               key={place._id}
-              className="flex cursor-pointer mt-4 gap-4 bg-gray-100 p-4 rounded-2xl"
+              className="flex cursor-pointer mt-4 gap-4 bg-gray-100 p-4 rounded-2xl hover:-translate-y-1 transition-transform"
             >
               <div className="flex w-32 h-32 bg-gray-300 grow shrink-0">
                 <img

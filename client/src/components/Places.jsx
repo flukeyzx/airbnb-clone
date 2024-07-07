@@ -167,7 +167,7 @@ const Places = () => {
               <div>
                 <h3 className="mt-2 -mb-1">Check in time</h3>
                 <input
-                  type="text"
+                  type="number"
                   value={checkInTime}
                   onChange={(e) => setCheckInTime(e.target.value)}
                   required
@@ -177,7 +177,7 @@ const Places = () => {
               <div>
                 <h3 className="mt-2 -mb-1">Check out time</h3>
                 <input
-                  type="text"
+                  type="number"
                   value={checkOutTime}
                   onChange={(e) => setCheckOutTime(e.target.value)}
                   required
